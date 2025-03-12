@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--<style>
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    form,
+    input {
+        margin: 10px;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+</style>-->
+
+<body>
+    <form name="cadastro" method="get" action="index.html">
+        <table>
+            <tr>
+                <td>Informe seu nome:</td>
+                <td><input type="text" name="Nome" placeholder="Insira seu nome aqui!" required autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td> Informe seu endereço:</td>
+                <td><input type="text" name="endereco" placeholder="Insira seu endereço aqui!" value="Itapetininga"><br>
+                </td>
+            </tr>
+            <tr>
+                <td> Informe seu email:</td>
+                <td><input type="email" name="email" placeholder="exemplo@gmail.com"><br></td>
+            </tr>
+            <tr>
+                <td> Senha:</td>
+                <td><input type="password" name="senha" placeholder="Informe seu senha" required maxlength="10"
+                        minlength="4"><br></td>
+            </tr>
+
+            <tr>
+                <td> Informe um número:</td>
+                <td><input type="number" name="num" placeholder="Insira um número" max="100" min="-010" step="1"
+                        value="0"><br></td>
+            </tr>
+
+            <tr>
+                <td> Informe seu site:</td>
+                <td><input type="url" name="site" placeholder="Insira o link do seu site"><br></td>
+            </tr>
+            <tr>
+                <td> Informe um valor:</td>
+                <td><input type="range" name="valor" placeholder="Insira um valor" max="100" min="-010" step="1"
+                        value="0"><br></td>
+            </tr>
+            <tr>
+                <td> Informe uma data:</td>
+                <td><input type="date" name="data" placeholder="Insira uma data"><br></td>
+            </tr>
+            <tr>
+            <tr>
+                <td> Informe um horário:</td>
+                <td><input type="time" name="data" placeholder="Insira um horário" step="300"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">Selecione o estado</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="estado"> <!--size="4"-->
+                        <option value="ac">AC</option>
+                        <option value="sp">SP</option>
+                        <option value="rj">RJ</option>
+                        <option value="am">AM</option>
+                        <option value="ap">AP</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Deixe seu comentário</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea name="comentario" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="Clique aqui!" name="enviar"><br></td>
+                <td align="center"><input type="reset" name="limpar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
